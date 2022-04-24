@@ -1,5 +1,5 @@
-# mike  
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
+# Example  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
  ## Table of Contents:  
 [1. Description](#Description)  
 [2. Installation](#Installation)  
@@ -9,11 +9,11 @@
 [6. Any Prior Tests](#Tests)  
 [7. Any Questions](#Questions)  
 ## Description:
-h
+Class Assignment
 ## Installation:
-h
+To be determined
 ## App Usage:
-hh
+Also to be determined
 ## License Details:  
  The Eclipse Public License (EPL) is a free and open source software license most notably used for the Eclipse IDE and other projects by the Eclipse Foundation.  
   
@@ -23,12 +23,12 @@ hh
   
  The MPL is a simple copyleft license. The MPL's "file-level" copyleft is designed to encourage contributors to share modifications they make to your code, while still allowing them to combine your code with code under other licenses (open or proprietary) with minimal restrictions.   
 ## List of Contributors:
-h
+Yes
 ## Tests:
-h
+None
 ## Questions:
  Here is a Link to my Github:  
-https://github.com/h  
+https://github.com/MichaelMikelic  
  Email:  
-h  
+mmikelic@kpp.us.com  
 For Any Questions or Comments
