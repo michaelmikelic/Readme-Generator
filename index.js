@@ -1,36 +1,20 @@
-/*********************************************************
- * Readme Generator
- * @package Readme-Generator
- * @author Michael Mikelic
- * @version development
- * @license none (public domain)
- * ===============[ TABLE OF CONTENTS ]===================
- * 0. Dependancies
- * 1. Globals
- * 2. Functions ()
- *   2.1 init()
- *
- * 3. Document Ready
- *********************************************************/
-/* ===============[ 0. Dependancies ]=====================*/
 const fs = require("fs");
 const inquirer = require("inquirer");
-const { title } = require("process");
 const { table } = require("console");
+const { title } = require("process");
 
-/* ===============[ 1. Globals ]=========================*/
 
-// array of questions for user
+// prompt questions //
 const questions = [
   {
     type: "input",
     name: "repositoryName",
-    message: "Enter the name/title of application! (Required)",
+    message: "To Start please enter the application name: (Required)",
     validate: (repoNameInput) => {
       if (repoNameInput) {
         return true;
       } else {
-        console.log("Enter the name of app!");
+        console.log("Enter the name:");
         return false;
       }
     },
@@ -38,12 +22,12 @@ const questions = [
   {
     type: "input",
     name: "githubUser",
-    message: "Enter your Github username! (Required)",
+    message: "Please enter your Github username: (Required)",
     validate: (githubUserInput) => {
       if (githubUserInput) {
         return true;
       } else {
-        console.log("Enter your Github username!");
+        console.log("Enter your Github username:");
         return false;
       }
     },
@@ -51,12 +35,12 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Enter a description for your app! (Required)",
+    message: "Please describe your application: (Required)",
     validate: (descInput) => {
       if (descInput) {
         return true;
       } else {
-        console.log("Enter a description!");
+        console.log("Enter a description:");
         return false;
       }
     },
@@ -65,12 +49,12 @@ const questions = [
     type: "input",
     name: "installation",
     message:
-      "Enter some instructions for users to install your app! (Required)",
+      "Please enter instructions for the installation:(Required)",
     validate: (instalInput) => {
       if (instalInput) {
         return true;
       } else {
-        console.log("Enter some instructions!");
+        console.log("Installation Instructions:");
         return false;
       }
     },
@@ -91,7 +75,7 @@ const questions = [
   {
     type: "list",
     name: "license",
-    message: "What is the licensing for your app?(Required)",
+    message: "What is the license?(Required)",
     choices: ["GPL V3", "EPL 1.0", "MIT", "MPL 2.0"],
     validate: (licenseInput) => {
       if (licenseInput) {
@@ -144,7 +128,7 @@ const questions = [
     type: "input",
     name: "contact",
     message:
-      "Enter an email address for users to contact you and ask questions!(Required)",
+      "Please provide a contact email address for any user questions:(Required)",
     validate: (contactInput) => {
       if (contactInput) {
         return true;
@@ -342,6 +326,4 @@ function init() {
   });
 }
 
-/* ===============[ 3. Document Ready ]======================*/
-// function call to initialize program
 init();
